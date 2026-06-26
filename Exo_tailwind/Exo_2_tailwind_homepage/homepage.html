@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plume — Oreillers de chambre d'hôtel, pour la maison</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .font-display { font-family: Georgia, 'Times New Roman', serif; }
+  .fill-gauge-bar { transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+</style>
+</head>
+<body class="bg-zinc-950 text-stone-100">
+
+  <!-- NAVIGATION -->
+  <header class="border-b border-zinc-400/20">
+    <nav class="max-w-7xl mx-auto px-6 md:px-10 py-5 flex items-center justify-between">
+      <span class="font-display text-2xl tracking-wide">Plume</span>
+      <div class="hidden md:flex items-center gap-10 text-sm text-zinc-400">
+        <a href="#categories" class="hover:text-stone-100 transition-colors">Collections</a>
+        <a href="#produits" class="hover:text-stone-100 transition-colors">Best-sellers</a>
+        <a href="#avis" class="hover:text-stone-100 transition-colors">Avis</a>
+      </div>
+      <button class="border border-amber-400/40 text-amber-400 px-5 py-2 text-sm rounded-full hover:bg-amber-400 hover:text-zinc-950 transition-colors">
+        Panier (0)
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-7xl mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-amber-400 text-sm tracking-[0.2em] uppercase mb-5">Duvet d'oie • 95% plumes</p>
+      <h1 class="font-display text-5xl md:text-6xl leading-[1.05] mb-6">
+        La nuit d'un<br><span class="italic text-amber-400">hôtel cinq étoiles</span><br>chez vous
+      </h1>
+      <p class="text-zinc-400 text-lg leading-relaxed mb-8 max-w-md">
+        Sélectionné parmi les duvets les plus denses du marché, chaque oreiller Plume reproduit le soutien feutré des plus belles chambres d'Europe.
+      </p>
+      <div class="flex items-center gap-4">
+        <button class="bg-amber-400 text-zinc-950 px-8 py-3.5 rounded-full font-medium hover:bg-stone-100 transition-colors">
+          Découvrir la collection
+        </button>
+        <span class="text-zinc-400 text-sm">Livraison offerte dès 80€</span>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div class="aspect-[4/5] rounded-2xl border border-zinc-400/20 overflow-hidden">
+        <img src=".img/sofa-pillow.jpg" alt="Oreiller Plume posé sur un canapé" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Signature element : jauge fill power -->
+      <div class="absolute -bottom-8 -left-4 md:-left-10 bg-zinc-900 border border-amber-400/30 rounded-xl p-5 w-64 shadow-2xl">
+        <p class="text-xs text-zinc-400 uppercase tracking-wider mb-2">Fill power</p>
+        <div class="flex items-baseline gap-2 mb-3">
+          <span class="font-display text-3xl text-amber-400">700</span>
+          <span class="text-zinc-400 text-sm">cuin — densité premium</span>
+        </div>
+        <div class="h-1.5 bg-zinc-950 rounded-full overflow-hidden">
+          <div class="fill-gauge-bar h-full bg-amber-400 rounded-full" style="width: 78%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="categories" class="max-w-7xl mx-auto px-6 md:px-10 py-20 border-t border-zinc-400/20">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-display text-3xl md:text-4xl">Trouvez votre soutien</h2>
+      <p class="text-zinc-400 text-sm hidden md:block">Selon votre position de sommeil</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="group cursor-pointer">
+        <div class="aspect-square rounded-2xl overflow-hidden border border-zinc-400/20 mb-4 group-hover:border-amber-400/50 transition-colors">
+          <img src=".img/sofa-pillow.jpg" alt="Oreiller pour dormeurs sur le dos" class="w-full h-full object-cover">
+        </div>
+        <h3 class="font-display text-xl mb-1">Dormeurs sur le dos</h3>
+        <p class="text-zinc-400 text-sm">Soutien mi-ferme, fill power 600</p>
+      </div>
+
+      <div class="group cursor-pointer">
+        <div class="aspect-square rounded-2xl overflow-hidden border border-zinc-400/20 mb-4 group-hover:border-amber-400/50 transition-colors">
+          <img src=".img/sofa-pillow.jpg" alt="Oreiller pour dormeurs sur le côté" class="w-full h-full object-cover">
+        </div>
+        <h3 class="font-display text-xl mb-1">Dormeurs sur le côté</h3>
+        <p class="text-zinc-400 text-sm">Soutien ferme, fill power 700</p>
+      </div>
+
+      <div class="group cursor-pointer">
+        <div class="aspect-square rounded-2xl overflow-hidden border border-zinc-400/20 mb-4 group-hover:border-amber-400/50 transition-colors">
+          <img src=".img/sofa-pillow.jpg" alt="Oreiller pour dormeurs sur le ventre" class="w-full h-full object-cover">
+        </div>
+        <h3 class="font-display text-xl mb-1">Dormeurs sur le ventre</h3>
+        <p class="text-zinc-400 text-sm">Soutien souple, fill power 450</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRODUITS -->
+  <section id="produits" class="max-w-7xl mx-auto px-6 md:px-10 py-20 border-t border-zinc-400/20">
+    <h2 class="font-display text-3xl md:text-4xl mb-10">Nos best-sellers</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div class="bg-zinc-900/50 rounded-xl overflow-hidden border border-zinc-400/10 hover:border-amber-400/40 transition-colors">
+        <div class="aspect-square overflow-hidden">
+          <img src=".img/sofa-pillow.jpg" alt="Oreiller L'Hôtelier" class="w-full h-full object-cover">
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-lg mb-1">L'Hôtelier</h3>
+          <p class="text-zinc-400 text-xs mb-3">Duvet d'oie 95% — 700 cuin</p>
+          <p class="text-amber-400 font-medium">89 €</p>
+        </div>
+      </div>
+
+      <div class="bg-zinc-900/50 rounded-xl overflow-hidden border border-zinc-400/10 hover:border-amber-400/40 transition-colors">
+        <div class="aspect-square overflow-hidden">
+          <img src=".img/sofa-pillow.jpg" alt="Oreiller Le Nordique" class="w-full h-full object-cover">
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-lg mb-1">Le Nordique</h3>
+          <p class="text-zinc-400 text-xs mb-3">Duvet d'eider — 800 cuin</p>
+          <p class="text-amber-400 font-medium">149 €</p>
+        </div>
+      </div>
+
+      <div class="bg-zinc-900/50 rounded-xl overflow-hidden border border-zinc-400/10 hover:border-amber-400/40 transition-colors">
+        <div class="aspect-square overflow-hidden">
+          <img src=".img/sofa-pillow.jpg" alt="Oreiller Le Voyageur" class="w-full h-full object-cover">
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-lg mb-1">Le Voyageur</h3>
+          <p class="text-zinc-400 text-xs mb-3">Mémoire de forme — format cabine</p>
+          <p class="text-amber-400 font-medium">59 €</p>
+        </div>
+      </div>
+
+      <div class="bg-zinc-900/50 rounded-xl overflow-hidden border border-zinc-400/10 hover:border-amber-400/40 transition-colors">
+        <div class="aspect-square overflow-hidden">
+          <img src=".img/sofa-pillow.jpg" alt="Oreiller Le Lin Lavé" class="w-full h-full object-cover">
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-lg mb-1">Le Lin Lavé</h3>
+          <p class="text-zinc-400 text-xs mb-3">Housse lin français — duo</p>
+          <p class="text-amber-400 font-medium">39 €</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AVIS CLIENTS -->
+  <section id="avis" class="max-w-7xl mx-auto px-6 md:px-10 py-20 border-t border-zinc-400/20">
+    <h2 class="font-display text-3xl md:text-4xl mb-10">Ce qu'on en dit</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div>
+        <p class="text-amber-400 mb-3 tracking-widest">★★★★★</p>
+        <p class="font-display italic text-lg leading-relaxed mb-4">
+          « Je retrouve enfin les nuits de mon dernier séjour au Negresco. »
+        </p>
+        <p class="text-zinc-400 text-sm">Claire M. — L'Hôtelier</p>
+      </div>
+
+      <div>
+        <p class="text-amber-400 mb-3 tracking-widest">★★★★★</p>
+        <p class="font-display italic text-lg leading-relaxed mb-4">
+          « Le fill power 800 n'est pas un argument marketing, on sent vraiment la différence. »
+        </p>
+        <p class="text-zinc-400 text-sm">Thomas R. — Le Nordique</p>
+      </div>
+
+      <div>
+        <p class="text-amber-400 mb-3 tracking-widest">★★★★★</p>
+        <p class="font-display italic text-lg leading-relaxed mb-4">
+          « Parfait en avion comme en voiture, je ne voyage plus sans. »
+        </p>
+        <p class="text-zinc-400 text-sm">Inès L. — Le Voyageur</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-400/20">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <span class="font-display text-2xl">Plume</span>
+        <p class="text-zinc-400 text-sm mt-3">Literie premium depuis 2014.</p>
+      </div>
+      <div>
+        <p class="text-sm uppercase tracking-wider text-zinc-400 mb-3">Collections</p>
+        <ul class="text-sm space-y-2 text-stone-100/80">
+          <li><a href="#" class="hover:text-amber-400 transition-colors">Duvet d'oie</a></li>
+          <li><a href="#" class="hover:text-amber-400 transition-colors">Mémoire de forme</a></li>
+          <li><a href="#" class="hover:text-amber-400 transition-colors">Housses en lin</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm uppercase tracking-wider text-zinc-400 mb-3">Aide</p>
+        <ul class="text-sm space-y-2 text-stone-100/80">
+          <li><a href="#" class="hover:text-amber-400 transition-colors">Livraison & retours</a></li>
+          <li><a href="#" class="hover:text-amber-400 transition-colors">Guide du fill power</a></li>
+          <li><a href="#" class="hover:text-amber-400 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm uppercase tracking-wider text-zinc-400 mb-3">Newsletter</p>
+        <p class="text-sm text-stone-100/80 mb-3">Une fois par mois, pas plus.</p>
+        <div class="flex">
+          <input type="email" placeholder="vous@email.com" class="bg-zinc-900 border border-zinc-400/30 rounded-l-full px-4 py-2 text-sm flex-1 placeholder:text-zinc-400/60 focus:outline-none focus:border-amber-400">
+          <button class="bg-amber-400 text-zinc-950 rounded-r-full px-4 text-sm font-medium">OK</button>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-6 border-t border-zinc-400/10 text-zinc-400 text-xs">
+      © 2026 Plume. Tous droits réservés.
+    </div>
+  </footer>
+
+</body>
+</html>
